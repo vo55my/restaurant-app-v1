@@ -1,0 +1,33 @@
+@import url('https://fonts.googleapis.com/css2?family=Delicious+Handrawn&family=Sigmar&family=Ubuntu&display=swap');
+@import '/src/styles/navbar.scss';
+@import '/src/styles/jumbotron.scss';
+@import '/src/styles/restaurant.scss';
+@import '/src/styles/food.scss';
+@import '/src/styles/footer.scss';
+
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  font-family: 'Delicious Handrawn', cursive;
+  font-family: 'Sigmar', cursive;
+  font-family: 'Ubuntu', sans-serif;
+}
+
+.skip-link {
+  position: absolute;
+  top: -40px;
+  left: 0;
+  background-color: #bf1722;
+  color: white;
+  padding: 8px;
+  z-index: 100;
+}
+
+.skip-link:focus {
+  top: 0;
+}

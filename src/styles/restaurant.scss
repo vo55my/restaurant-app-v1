@@ -1,0 +1,80 @@
+h2 {
+  margin: 40px 0;
+  text-align: center;
+}
+
+#restaurant {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 20px;
+  align-items: center;
+  justify-items: center;
+  padding-bottom: 20px;
+}
+
+.card {
+  width: 300px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  padding: 10px;
+  box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+  grid-template-rows: 1fr 1fr;
+
+  img {
+    width: 100%;
+    border-radius: 5px;
+    height: 200px;
+  }
+
+  h3 {
+    margin-top: 10px;
+    margin-bottom: 5px;
+    font-size: 18px;
+  }
+
+  p {
+    margin-top: 5px;
+    margin-bottom: 10px;
+    color: black;
+  }
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.rating,
+.lokasi {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.desc {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+@media screen and (max-width: 1000px) {
+  #restaurant {
+    grid-template-columns: 1fr 1fr;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  #restaurant {
+    grid-template-columns: 1fr 1fr;
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 680px) {
+  #restaurant {
+    grid-template-columns: 1fr;
+  }
+}
